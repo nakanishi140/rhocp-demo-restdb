@@ -7,4 +7,4 @@ RUN mv rhocp-demo-restdb/* ./
 RUN chgrp -R 0 /root/app &&  chmod -R g=u /root/app
 USER 1001
 EXPOSE 8080
-ENTRYPOINT ["node","app.js"]
+ENTRYPOINT ["/bin/sh", "-c", "while :; do sleep 10; done"]
