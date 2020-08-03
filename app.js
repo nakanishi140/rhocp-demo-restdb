@@ -14,8 +14,8 @@ const port = 8080;
 
 let mysql = require("mysql");
 const con = mysql.createConnection({
-	host:	"localhost",
-	user:	"root",
+	host:	"mysql",
+	user:	"demo",
 	password:	"mysql",
 	database:	"demo",
 	timezone : 'Asia/Tokyo'
